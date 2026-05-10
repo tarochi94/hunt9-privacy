@@ -17,7 +17,23 @@
       color: white;
       text-align: center;
       padding: 3rem 1.5rem 2rem;
+      position: relative;
     }
+    .lang-switch {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      font-size: 0.85rem;
+    }
+    .lang-switch a {
+      color: white;
+      text-decoration: none;
+      opacity: 0.85;
+      padding: 4px 10px;
+      border-radius: 4px;
+      background: rgba(255,255,255,0.18);
+    }
+    .lang-switch a:hover { opacity: 1; }
     header .icon { font-size: 3rem; margin-bottom: 0.5rem; }
     header h1 { font-size: 2rem; font-weight: 700; margin-bottom: 0.25rem; }
     header p { font-size: 1rem; opacity: 0.85; }
@@ -106,6 +122,7 @@
 <body>
 
 <header>
+  <div class="lang-switch"><a href="./en.html">English</a></div>
   <div class="icon">🎨</div>
   <h1>Hunt9</h1>
   <p>色を集めて、1枚にまとめよう</p>
